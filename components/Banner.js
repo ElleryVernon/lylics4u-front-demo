@@ -1,17 +1,51 @@
+import styled from "styled-components";
 import Image from "next/image";
 
-function Banner() {
+export default function Hero() {
 	return (
-		<div className="relative sm:h-[400px] lg:h-[500px] xl: h-[700px]">
-			<Image className="brightness-50" src="/banner.jpg" layout="fill" objectFit="cover" />
-			<div className="absolute top-1/2 w-full text-center">
-				<p className="text-4xl text-white font-bold">어떤 노래를 검색해야할지 모르겠나요?</p>
-				<button className="text-orange-400 bg-white px-10 py-4 shadow-md rounded-lg font-bold my-5 hover:scale-105 active:scale-90">
-					우리가 추천해줄게요
-				</button>
+		<BannerSection className="banner">
+			<div className="bannerInner">
+				<span>
+					<h1>좋아하는 노래</h1>
+					<h1>좋아하는 가사</h1>
+					<h1>우리가 찾아드릴게요.</h1>
+					<a href="#" className="btn btn-light">
+						추천해주세요
+					</a>
+				</span>
 			</div>
-		</div>
+		</BannerSection>
 	);
 }
 
-export default Banner;
+const BannerSection = styled.section`
+	background: linear-gradient(to bottom, #0a0c2c80 3rem, transparent 10rem), url(banner-second.jpg);
+	background-position: center, bottom left;
+	background-size: cover, cover;
+	height: fit-content;
+	color: var(--light);
+	padding: 15rem var(--sidePadding) 6rem;
+	.bannerInner {
+		display: flex;
+		max-width: var(--containerWidth);
+		margin: 0 auto;
+	}
+	span {
+		max-width: var(--maxWidth);
+	}
+	h1 {
+		font-weight: 900;
+		font-size: clamp(2rem, 5.5vw, 3rem);
+		line-height: 1.2;
+		margin-bottom: 1.5rem;
+	}
+	@media (max-width: 36rem) {
+		background: linear-gradient(to bottom, #0a0c2c80 3rem, transparent), url(banner.jpg);
+		background-position: center, bottom left;
+		background-size: cover, cover;
+		align-items: flex-start;
+		padding-top: 7.5rem;
+		height: 75vh;
+		max-height: 720px;
+	}
+`;

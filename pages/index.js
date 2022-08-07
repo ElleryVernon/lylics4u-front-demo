@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
 import SmallCard from "../components/SmallCard";
@@ -10,11 +9,7 @@ import Footer from "../components/Footer";
 
 export default function Home({ songData, artistData }) {
 	return (
-		<div className="">
-			<Head>
-				<title>lylics4u</title>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
+		<>
 			<Header />
 			<Banner />
 
@@ -45,7 +40,7 @@ export default function Home({ songData, artistData }) {
 				</section>
 			</main>
 			<Footer />
-		</div>
+		</>
 	);
 }
 
