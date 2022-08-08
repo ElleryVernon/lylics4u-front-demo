@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Search, Menu, User } from "react-feather";
 import { useRef, useEffect } from "react";
+import Link from "next/link";
 
 export default function Header() {
 	const headerRef = useRef(null);
@@ -27,13 +28,15 @@ export default function Header() {
 	return (
 		<HeaderSection ref={headerRef}>
 			<div className="headerInner">
-				<a href="/" className="logo cursor-pointer">
-					<span>lylics4u</span>
-				</a>
+				<Link href="/">
+					<div className="logo cursor-pointer">
+						<span>lylics4u</span>
+					</div>
+				</Link>
 				<nav ref={navRef}>
-					<a href="#" className="active">
+					<Link href="#" className="active">
 						노래로 검색하기
-					</a>
+					</Link>
 					<a href="#">이미지로 검색하기</a>
 				</nav>
 
