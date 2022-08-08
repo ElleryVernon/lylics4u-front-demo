@@ -17,8 +17,8 @@ export default function Home({ songData, artistData }) {
 				<section className="pt-6">
 					<h2 className="text-4xl font-semibold pb-5">인기 노래 살펴보기</h2>
 					<div className="grid grid-cols-1 sm:grid-cols-2">
-						{songData?.map(({ songTitle, artist, albumCover }) => (
-							<SmallCard key={albumCover} songTitle={songTitle} artist={artist} albumCover={albumCover} />
+						{songData?.map(({ songTitle, artist, albumCover, url }) => (
+							<SmallCard key={albumCover} songTitle={songTitle} artist={artist} albumCover={albumCover} url={url} />
 						))}
 					</div>
 				</section>

@@ -27,10 +27,10 @@ async function scrapper() {
 			songTitle: songTitle,
 			artist: artist,
 			albumCover: albumCover,
+			url: url,
 		});
 	}
 
 	return songs;
 }
-
 export default scrapper;

@@ -28,9 +28,9 @@ export default function Header() {
 	return (
 		<HeaderSection ref={headerRef}>
 			<div className="headerInner">
-				<div className="logo cursor-pointer">
+				<a href="/" className="logo cursor-pointer">
 					<span>lylics4u</span>
-				</div>
+				</a>
 				<nav ref={navRef}>
 					<a href="#" className="active">
 						노래로 검색하기
