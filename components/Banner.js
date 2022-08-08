@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 
-export default function Hero() {
+export default function Banner() {
 	return (
 		<BannerSection className="banner">
 			<div className="bannerInner">
