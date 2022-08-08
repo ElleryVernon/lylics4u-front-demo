@@ -111,7 +111,7 @@ const HeaderSection = styled.header`
 	.logo {
 		span {
 			font-weight: 600;
-			font-size: 1.15rem;
+			font-size: 1.6rem;
 			margin-left: 0.5rem;
 		}
 	}
