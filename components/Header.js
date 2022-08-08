@@ -34,9 +34,9 @@ export default function Header() {
 					</div>
 				</Link>
 				<nav ref={navRef}>
-					<Link href="#" className="active">
+					<a href="#" className="active">
 						노래로 검색하기
-					</Link>
+					</a>
 					<a href="#">이미지로 검색하기</a>
 				</nav>
 
