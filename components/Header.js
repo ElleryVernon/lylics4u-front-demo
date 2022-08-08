@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Search, Menu, User } from "react-feather";
-import Image from "next/image";
 import { useRef, useEffect } from "react";
 
 export default function Header() {

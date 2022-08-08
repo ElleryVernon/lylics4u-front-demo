@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function LargeCard({ img, title, description, buttonText }) {
 	return (
@@ -10,14 +11,11 @@ function LargeCard({ img, title, description, buttonText }) {
 				<h3 className="text-4xl mb-3 w-64">{title}</h3>
 				<p>{description}</p>
 				<br />
-				<a
-					href="https://github.com/freejin23/lyrics4u"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="btn btn-dark"
-				>
-					이동하기
-				</a>
+				<Link href="https://github.com/freejin23/lyrics4u" passHref>
+					<a target="_blank" rel="noopener noreferrer" className="btn btn-dark">
+						이동하기
+					</a>
+				</Link>
 			</div>
 		</section>
 	);
