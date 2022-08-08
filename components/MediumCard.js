@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function MediumCard({ img, artist }) {
 	return (
-		<Link href={`https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=${artist}`} passHref>
+		<Link href={`https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=${artist}+노래`} passHref>
 			<a
 				target="_blank"
 				rel="noopener noreferrer"
