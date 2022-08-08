@@ -10,7 +10,12 @@ function LargeCard({ img, title, description, buttonText }) {
 				<h3 className="text-4xl mb-3 w-64">{title}</h3>
 				<p>{description}</p>
 				<br />
-				<a href="https://github.com/freejin23/lyrics4u" target="_blank" className="btn btn-dark">
+				<a
+					href="https://github.com/freejin23/lyrics4u"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="btn btn-dark"
+				>
 					이동하기
 				</a>
 			</div>
