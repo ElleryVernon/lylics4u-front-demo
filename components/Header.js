@@ -30,7 +30,7 @@ export default function Header() {
 			<div className="headerInner">
 				<Link href="/">
 					<div className="logo cursor-pointer">
-						<span>lylics4u</span>
+						<span>lyrics4u</span>
 					</div>
 				</Link>
 				<nav ref={navRef}>
