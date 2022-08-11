@@ -37,7 +37,6 @@ export default function Header() {
 					<a href="#" className="active">
 						노래로 검색하기
 					</a>
-					<a href="#">이미지로 검색하기</a>
 				</nav>
 
 				<form ref={formRef} className="search">
